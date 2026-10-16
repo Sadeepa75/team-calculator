@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Task 3: Add button in index.html -->
-    <button id="add-btn" onclick="performAddition()">Add (5 + 3)</button>
-    <p id="output-display"></p>
+    <main class="calculator">
+        <h1>Simple Calculator</h1>
+        <!-- Task 3: Add button in index.html -->
+        <button id="add-btn" onclick="performAddition()">Add (5 + 3)</button>
+        <p id="output-display" aria-live="polite"></p>
+    </main>
 
     <!-- Link your calculator script -->
     <script src="calculator.js"></script>
