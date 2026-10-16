@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
 <body>
-    
+
+    <!-- Task 3: Add button in index.html -->
+    <button id="add-btn" onclick="performAddition()">Add (5 + 3)</button>
+    <p id="output-display"></p>
+
+    <!-- Link your calculator script -->
+    <script src="calculator.js"></script>
+    <script>
+        function performAddition() {
+            // Call the add function implemented in calculator.js
+            const result = add(5, 3);
+            
+            // Display the result on the webpage
+            document.getElementById('output-display').innerText = `Result: ${result}`;
+        }
+    </script>
 </body>
 </html>
